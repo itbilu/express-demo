@@ -6,4 +6,10 @@ router.get('/', function(req, res) {
   res.send('respond with a resource');
 });
 
+
+router.get('/:id', function(req, res) {
+  console.log(req.route);
+  res.send('GET');
+});
+
 module.exports = router;
